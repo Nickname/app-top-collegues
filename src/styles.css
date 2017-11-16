@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+.top5 {
+  margin-top: 5px
+}
+.top10 {
+  margin-top: 10px
+}
+.top15 {
+  margin-top: 15px
+}
+.top20 {
+  margin-top: 20px
+}

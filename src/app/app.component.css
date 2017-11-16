@@ -1,0 +1,25 @@
+#form-app {
+  background-color: lightgrey
+}
+
+#description {
+  color: grey
+}
+
+#bandeau {
+  padding-bottom: 20px
+}
+
+#save-btn {
+  padding: 12px 5px 12px 5px
+}
+
+ngb-alert {
+  margin-top: 10px;
+  max-height: 50px;
+  max-width: 200px;
+}
+
+#col-list {
+  margin-top: 10px
+}
