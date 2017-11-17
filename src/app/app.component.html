@@ -1,4 +1,3 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="container">
   <div id="form-app">
     <div id="bandeau" class="container">
@@ -26,8 +25,11 @@
   </div>
 </div>
 
-<div class="container row">
-  <div *ngFor="let col of collegues" id="col-list" class="col-xs-6 col-md-4 col-lg-3">
-    <app-un-collegue [collegue]="col"></app-un-collegue>
-  </div>
+<nav id="navigation" class="container nav nav-pills flex-column flex-sm-row">
+  <a class="flex-sm-fill text-sm-center nav-link" routerLink="/classique" RouterLinkActive="active-link"></a>
+  <a class="flex-sm-fill text-sm-center nav-link" routerLink="/tableau" RouterLinkActive="active-link"></a>
+</nav>
+
+<div id="component" class="container">
+    <router-outlet></router-outlet>
 </div>

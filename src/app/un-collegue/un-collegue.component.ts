@@ -10,21 +10,22 @@ import { CollegueService } from '../shared/service/collegue.service'
 })
 export class UnCollegueComponent implements OnInit {
 
-  // paramètre d'entrée "collegue"
-  @Input() collegue: Collegue;
+  @Input() collegue:Collegue;
 
-  constructor(private collegueService: CollegueService) { }
+  constructor(private collegueService:CollegueService) { }
 
   ngOnInit() {
   }
 
   jaime() {
     this.collegueService.aimer(this.collegue)
+      .then((col) => this.collegue = col)
     return false
   }
 
   jedeteste() {
     this.collegueService.detester(this.collegue)
+      .then((col) => this.collegue = col)
     return false
   }
 
