@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http'
 import { RouterModule, Routes } from '@angular/router'
 
 import { AppComponent } from './app.component';
-import { UnCollegueComponent } from './un-collegue/un-collegue.component';
 import { CardCollegueComponent } from './card-collegue/card-collegue.component';
 import { TableauCollegueComponent } from './tableau-collegue/tableau-collegue.component';
 import { DetailCollegueComponent } from './detail-collegue/detail-collegue.component';
@@ -22,7 +21,6 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    UnCollegueComponent,
     CardCollegueComponent,
     TableauCollegueComponent,
     DetailCollegueComponent
