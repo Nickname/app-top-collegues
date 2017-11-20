@@ -3,7 +3,8 @@ import { Collegue } from './../domain/collegue'
 import { CollegueService } from './../service/collegue.service'
 
 export class GlobalComponent {
-  protected collegues:Collegue[] = [];
+  public collegues:Collegue[] = [];
+  public limite:number = 10;
 
   constructor (protected collegueService:CollegueService) { }
 
@@ -36,5 +37,9 @@ export class GlobalComponent {
         this.sort()
       })
     return false
+  }
+
+  limit($event) {
+    this.limite = $event.target.value
   }
 }

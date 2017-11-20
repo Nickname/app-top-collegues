@@ -10,6 +10,7 @@ import { TableauCollegueComponent } from './tableau-collegue/tableau-collegue.co
 import { DetailCollegueComponent } from './detail-collegue/detail-collegue.component';
 
 import { CollegueService } from './shared/service/collegue.service';
+import { ScorePipe } from './shared/pipe/score.pipe';
 
 const appRoutes: Routes = [
   {path: 'classique', component: CardCollegueComponent},
@@ -23,7 +24,8 @@ const appRoutes: Routes = [
     AppComponent,
     CardCollegueComponent,
     TableauCollegueComponent,
-    DetailCollegueComponent
+    DetailCollegueComponent,
+    ScorePipe
   ],
   imports: [
     BrowserModule,
