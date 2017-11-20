@@ -29,5 +29,12 @@ ngb-alert {
 }
 
 #navigation {
-  width: 100%
+  margin-top: 10px
+}
+
+#separator {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
 }

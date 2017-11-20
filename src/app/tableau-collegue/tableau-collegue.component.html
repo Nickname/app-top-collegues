@@ -1,16 +1,19 @@
 <table class="table">
   <thead class="thead-default">
     <tr>
-      <th>Image</th>
+      <th>Photo</th>
       <th>Pseudo</th>
       <th>Score</th>
       <th>Actions</th>
     </tr>
   </thead>
   <tbody>
-    <div *ngFor="let col of collegues">
-      <tr>
-        <td><img class="img-responsive" src="{{col.url}}" alt="Card image collegue"></td>
+      <tr *ngFor="let col of collegues">
+        <td>
+          <a routerLink="/detail/{{col.nom}}">
+            <img class="img-responsive" src="{{col.url}}" alt="Card image collegue">
+          </a>
+        </td>
         <td>{{col.nom}}</td>
         <td>{{col.score}}</td>
         <td>
@@ -18,6 +21,5 @@
           <a (click)="jedeteste(col)" class="btn btn-outline-danger">Je déteste</a>
         </td>
       </tr>
-    </div>
   </tbody>
 </table>

@@ -26,9 +26,11 @@
 </div>
 
 <nav id="navigation" class="container nav nav-pills flex-column flex-sm-row">
-  <a class="flex-sm-fill text-sm-center nav-link" routerLink="/classique" RouterLinkActive="active-link"></a>
-  <a class="flex-sm-fill text-sm-center nav-link" routerLink="/tableau" RouterLinkActive="active-link"></a>
+  <a class="flex-sm-fill text-sm-center nav-link" routerLink="/classique" routerLinkActive="active">Classique</a>
+  <a class="flex-sm-fill text-sm-center nav-link" routerLink="/tableau" routerLinkActive="active">Tableau</a>
 </nav>
+
+<hr id="separator">
 
 <div id="component" class="container">
     <router-outlet></router-outlet>

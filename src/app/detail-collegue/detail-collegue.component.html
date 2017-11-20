@@ -1,0 +1,16 @@
+<button class="btn btn-primary" type="button" name="button" (click)="backButton()">Retour</button>
+<div class="row">
+  <img class="img img-responsive" [src]="collegue?.url" alt="">
+</div>
+<div class="row">
+  <p class="display-4">{{collegue?.nom}}</p>
+</div>
+<div class="row">
+  <p class="display-3">
+    <strong>{{collegue?.score}}</strong>
+  </p>
+</div>
+<div class="row col-4 offset-4" id="btn-vote">
+  <a (click)="jaime(collegue)" class="btn btn-outline-success">J'aime</a>
+  <a (click)="jedeteste(collegue)" class="btn btn-outline-danger">Je déteste</a>
+</div>

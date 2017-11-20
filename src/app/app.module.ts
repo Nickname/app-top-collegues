@@ -8,14 +8,15 @@ import { AppComponent } from './app.component';
 import { UnCollegueComponent } from './un-collegue/un-collegue.component';
 import { CardCollegueComponent } from './card-collegue/card-collegue.component';
 import { TableauCollegueComponent } from './tableau-collegue/tableau-collegue.component';
+import { DetailCollegueComponent } from './detail-collegue/detail-collegue.component';
 
 import { CollegueService } from './shared/service/collegue.service';
 
 const appRoutes: Routes = [
   {path: 'classique', component: CardCollegueComponent},
   {path: 'tableau', component: TableauCollegueComponent},
-  //{path: 'carousel'},
-  {path: '**', redirectTo: 'classique'}
+  {path: 'detail/:nom', component: DetailCollegueComponent},
+  {path: '', pathMatch:'full', redirectTo: 'classique'}
 ]
 
 @NgModule({
@@ -23,7 +24,8 @@ const appRoutes: Routes = [
     AppComponent,
     UnCollegueComponent,
     CardCollegueComponent,
-    TableauCollegueComponent
+    TableauCollegueComponent,
+    DetailCollegueComponent
   ],
   imports: [
     BrowserModule,

@@ -1,13 +1,15 @@
-<div *ngFor="let col of collegues" id="col-list">
-    <div class="card" id="card-collegue">
+<div class="row">
+  <div *ngFor="let col of collegues" class="card" id="card-collegue">
+    <a routerLink="/detail/{{col.nom}}">
       <img class="card-img-top" src="{{col.url}}" alt="Card image collegue">
-      <div class="card-block">
-        <h4 class="card-title text-center">{{col.nom}}</h4>
-        <p class="card-text text-center"><strong>{{col.score}}</strong></p>
-        <div class="btn-vote">
-          <a (click)="jaime(col)" class="btn btn-outline-success">J'aime</a>
-          <a (click)="jedeteste(col)" class="btn btn-outline-danger">Je déteste</a>
-        </div>
+    </a>
+    <div class="card-block">
+      <h4 class="card-title text-center">{{col.nom}}</h4>
+      <p class="card-text text-center"><strong>{{col.score}}</strong></p>
+      <div class="btn-vote">
+        <a (click)="jaime(col)" class="btn btn-outline-success">J'aime</a>
+        <a (click)="jedeteste(col)" class="btn btn-outline-danger">Je déteste</a>
       </div>
     </div>
+  </div>
 </div>

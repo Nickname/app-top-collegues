@@ -1,0 +1,24 @@
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+p {
+  display: block;
+  margin: 0 auto;
+}
+
+#btn-vote {
+  margin-bottom: 20px
+}
+
+.btn-outline-success {
+  display: block;
+  margin-left: 0px
+}
+
+.btn-outline-danger {
+  display: block;
+  margin-right: 0px;
+  margin-left: auto;
+}
