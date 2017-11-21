@@ -20,12 +20,11 @@ export class AppComponent implements OnInit {
       this.afficherSucces = false
 
       this.collegueService.lister()
-        .then((cols) => this.collegues = cols)
+        .subscribe((cols) => this.collegues = cols)
   }
 
   add(pseudo:HTMLInputElement, imageUrl:HTMLInputElement) {
     this.collegueService.sauvegarder(new Collegue(pseudo.value, imageUrl.value, 30))
-      .then((col) => this.collegues.push(col))
     pseudo.value = "";
     imageUrl.value = "";
 

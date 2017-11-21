@@ -18,7 +18,7 @@
       <tr *ngFor="let col of collegues | slice:0:limite">
         <td>
           <a routerLink="/detail/{{col.nom}}">
-            <img class="img-responsive" src="{{col.url}}" alt="Card image collegue">
+            <img id="img-col" class="img-responsive" src="{{col.url}}" alt="image collegue">
           </a>
         </td>
         <td>{{col.nom | uppercase}}</td>

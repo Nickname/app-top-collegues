@@ -6,6 +6,10 @@
   padding-bottom: 10px
 }
 
+#img-col {
+  height: 250px;
+}
+
 .card-title {
   font-size: 1.5rem;
 }
@@ -21,4 +25,15 @@
 
 #contenu {
   margin-top: 10px;
+}
+
+#head-col>a {
+  z-index: 50;
+}
+
+#head-col>button {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  z-index: 51
 }

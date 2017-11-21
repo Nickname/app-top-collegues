@@ -3,7 +3,7 @@ import { Collegue } from './../shared/domain/collegue'
 
 import { CollegueService } from './../shared/service/collegue.service'
 
-import { GlobalComponent } from './../shared/global_component/collegue.component'
+import { GlobalComponent } from './../shared/global/collegue.component'
 
 @Component({
   selector: 'app-card-collegue',

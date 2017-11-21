@@ -7,9 +7,14 @@
 
 <div class="row" id="contenu">
   <div *ngFor="let col of collegues" class="card" id="card-collegue">
-    <a routerLink="/detail/{{col.nom}}">
-      <img class="card-img-top" src="{{col.url}}" alt="Card image collegue">
-    </a>
+    <div id="head-col">
+      <a routerLink="/detail/{{col.nom}}">
+        <img id="img-col" class="card-img-top" src="{{col.url}}" alt="image collegue">
+      </a>
+      <button type="button" class="close" aria-label="Close" (click)="supprimer(col)">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
     <div class="card-block">
       <h4 class="card-title text-center">{{col.nom | uppercase}}</h4>
       <p class="card-text text-center"><strong [innerHTML]="col.score | score"></strong></p>

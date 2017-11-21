@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
-import { GlobalComponent } from './../shared/global_component/collegue.component'
+import { GlobalComponent } from './../shared/global/collegue.component'
 
 import { CollegueService } from './../shared/service/collegue.service'
 import { Collegue } from './../shared/domain/collegue'
@@ -21,7 +21,7 @@ export class DetailCollegueComponent extends GlobalComponent implements OnInit {
     super(collegueService)
     route.params.subscribe(params => { this.nom = params['nom']; });
 
-    collegueService.lister().then((cols) => {
+    collegueService.observer().subscribe((cols) => {
       console.log(cols)
       this.collegue = cols.find((col) => col.nom == this.nom)
     })
